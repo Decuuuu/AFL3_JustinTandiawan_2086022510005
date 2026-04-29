@@ -1,0 +1,148 @@
+/* css/styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Warna biru muda khusus hero & card sesuai gambar */
+.bg-light-blue {
+    background-color: #eaf4fc;
+}
+
+/* ========================================= */
+/* NAVBAR & ANIMASI MENU                     */
+/* ========================================= */
+.navbar {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); /* Bayangan sangat tipis di bawah navbar */
+}
+
+.navbar-brand {
+    font-weight: 800;
+    color: #0d6efd !important;
+    font-size: 1.4rem;
+}
+
+.nav-link {
+    font-weight: 600;
+    color: #555 !important;
+    margin-left: 5px;
+    padding: 8px 16px !important;
+    border-radius: 8px;
+    transition: all 0.2s ease-in-out; /* Animasi super smooth */
+}
+
+/* Animasi Navbar Hover (Berubah warna & ada background biru muda) */
+.nav-link:hover {
+    background-color: #eaf4fc;
+    color: #0d6efd !important;
+}
+
+.nav-link.active {
+    color: #0d6efd !important;
+}
+
+/* ========================================= */
+/* HERO SECTION                              */
+/* ========================================= */
+.hero-section {
+    padding: 80px 0 100px 0;
+    width: 100%;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+
+/* ========================================= */
+/* TOMBOL & ANIMASI KLIK (MEMBAL)            */
+/* ========================================= */
+.action-btn {
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-white-custom {
+    background-color: #ffffff;
+    color: #0d6efd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.btn-blue-custom {
+    background-color: #3b82f6;
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.2);
+}
+
+/* Animasi Hover Tombol */
+.btn-white-custom:hover {
+    background-color: #f8f9fa;
+    transform: translateY(-3px);
+}
+
+.btn-blue-custom:hover {
+    background-color: #2563eb;
+    transform: translateY(-3px);
+}
+
+/* Animasi Ditekan (Skala mengecil / membal) */
+.action-btn:active, .nav-link:active {
+    transform: scale(0.92) !important;
+}
+
+/* ========================================= */
+/* SKILLS SECTION                            */
+/* ========================================= */
+.skills-section {
+    padding: 70px 0;
+}
+
+.skill-card {
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+/* Animasi Hover pada Kartu Skills */
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.06);
+}
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background-color: #0d6efd;
+    color: white;
+    font-weight: 800;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+.icon-box-transparent {
+    color: #0d6efd;
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 45px;
+}
